@@ -4,16 +4,15 @@
 @ATTRIBUTE peso 	INTEGER
 @ATTRIBUTE idade 	INTEGER
 @ATTRIBUTE class 	{Masculino,Feminino}
-@ATTRIBUTE nome 	STRING
 
 @DATA
-0,250,36,Masculino,"Homer"
-10,150,34,Feminino,"Marge"
-2,90,10,Masculino,"Bart"
-6,78,8,Feminino,"Lisa"
-4,20,1,Feminino,"Maggie"
-1,170,70,Masculino,"Abe"
-8,160,41,Feminino,"Selma"
-10,180,38,Masculino,"Otto"
-6,200,45,Masculino,"Krusty"
+0,250,36,Masculino
+10,150,34,Feminino
+2,90,10,Masculino
+6,78,8,Feminino
+4,20,1,Feminino
+1,170,70,Masculino
+8,160,41,Feminino
+10,180,38,Masculino
+6,200,45,Masculino
 

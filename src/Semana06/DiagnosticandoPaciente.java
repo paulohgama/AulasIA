@@ -1,4 +1,4 @@
-package semana06_1;
+package Semana06;
 
 import weka.classifiers.bayes.NaiveBayes;
 import weka.core.DenseInstance;
@@ -7,7 +7,7 @@ import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
 
-public class diagnosticandopaciente {
+public class DiagnosticandoPaciente {
     public static void main(String[] args) throws Exception {
         //LER ARQUIVO ARFF
         DataSource arff = new DataSource("contact-lenses.arff");

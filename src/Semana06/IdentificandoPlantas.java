@@ -1,10 +1,10 @@
-package semana06_1;
+package Semana06;
 
 import weka.classifiers.lazy.IBk;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
-public class identificandoplanta {
+public class IdentificandoPlantas {
     public static void main(String[] args) throws Exception {
         //LER ARQUIVO ARFF
         DataSource arff = new DataSource("iris.arff");
