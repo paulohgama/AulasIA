@@ -21,10 +21,10 @@ public class KNN_Weka {
         Instance comic = new DenseInstance(4);
         comic.setDataset(simpsons);
         comic.setValue(0, 8);
-        comic.setValue(1, 290);
+        comic.setValue(1, 140); //Feminino 140 e Masculino 290 
         comic.setValue(2, 38);
         
-        IBk knn = new IBk(2);
+        IBk knn = new IBk(3);
         knn.buildClassifier(simpsons);
         
         double grupo = knn.classifyInstance(comic);
