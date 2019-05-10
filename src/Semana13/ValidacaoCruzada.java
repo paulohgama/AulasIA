@@ -19,7 +19,7 @@ public class ValidacaoCruzada {
         Instances iris = arff.getDataSet().resample(new Random());
         //Define indice da classe
         iris.setClassIndex(4);
-        int k = 3; // Quantidade de partições
+        int k = iris.numInstances(); // Quantidade de partições
         System.out.println("real;vizinho;knn3;knn7");
         for (int i = 0; i < k; i++) {
             Instances irisTreino = iris.trainCV(k, i); // Treina
@@ -35,8 +35,8 @@ public class ValidacaoCruzada {
             knn3.buildClassifier(irisTreino);
             knn7.buildClassifier(irisTreino);
             
-            for (int j = 0; j < irisTreino.numInstances(); j++) {
-                Instance teste = irisTreino.instance(j);
+            for (int j = 0; j < irisTeste.numInstances(); j++) {
+                Instance teste = irisTeste.instance(j);
                 System.out.print(teste.value(4));
                 teste.setClassMissing();
                 double cVizinho = vizinho.classifyInstance(teste);
