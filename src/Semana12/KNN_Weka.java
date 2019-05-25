@@ -1,4 +1,4 @@
-package Semana11;
+package Semana12;
 
 import weka.classifiers.lazy.IBk;
 import weka.core.DenseInstance;

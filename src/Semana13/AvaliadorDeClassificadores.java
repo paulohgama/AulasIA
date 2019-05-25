@@ -14,7 +14,7 @@ public class AvaliadorDeClassificadores {
         //Pega a base
         DataSource arff = new DataSource("data/iris.arff");
         //Instancia e reordena
-        Instances iris = arff.getDataSet().resample(new Random());
+        Instances iris = arff.getDataSet();
         //Define indice da classe
         iris.setClassIndex(4);
         int k = 3; // Quantidade de partições
